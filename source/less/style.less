@@ -1,1 +1,36 @@
-// Начните писать стили здесь
+@import "./header.less";
+@import "./colors.less";
+@import "./fonts.less";
+@import "./footer.less";
+@import "./welcome-content.less";
+@import "./causes.less";
+@import "./advertising.less";
+@import "./causes-grey.less";
+@import "./form-search.less";
+@import "./footer-map.less";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: @basic-black;
+}
+.page {
+  height: 100%;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
