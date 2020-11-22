@@ -45,33 +45,46 @@
     </section>
 
     <section class="feedback-forms">
-      <form action="https://echo.htmlacademy.ru" method="get">
+      <form class="feedback-forms__forms" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="hello-form">
           <legend class="hello-form__legend">Представьтесь:</legend>
-
-          <label class="hello-form__label" for="name">Имя*:</label>
-          <input class="hello-form__input" type="text" id="name" name="name" placeholder="Петр">
-
-          <label class="hello-form__label" for="surname">Фамилия*:</label>
-          <input class="hello-form__input"type="text" id="surname" name="surname" placeholder="Иванов">
-
-          <label class="hello-form__label" for="patronymic">Отчество:</label>
-          <input class="hello-form__input"type="text" id="patronymic" name="patronymic" placeholder="Александрович">
+          <div class="hello-form__wrap">
+            <label class="hello-form__label" for="name">Имя*:</label>
+            <input class="hello-form__input" type="text" id="name" name="name" placeholder="Петр">
+          </div>
+          <div class="hello-form__wrap">
+            <label class="hello-form__label" for="surname">Фамилия*:</label>
+            <input class="hello-form__input"type="text" id="surname" name="surname" placeholder="Иванов">
+          </div>
+          <div class="hello-form__wrap">
+            <label class="hello-form__label" for="patronymic">Отчество:</label>
+            <input class="hello-form__input"type="text" id="patronymic" name="patronymic" placeholder="Александрович">
+          </div>
         </fieldset>
 
         <fieldset class="contact-form">
           <legend class="contact-form__legend">Контактная информация:</legend>
+          <div class="contact-form__wrapper">
+            <div class="contact-form__wrapper">
+              <label class="contact-form__label" for="phone">Контактный телефон*:</label>
 
-          <label class="contact-form__label" for="phone">Контактный телефон*:</label>
-          <input class="contact-form__input" type="tel" id="phone" name="phone" placeholder="Введите телефон">
-          <div class="contact-form__icon">
-            <img src="https://via.placeholder.com/18x18" alt="phone" width="18" height="18">
-          </div>
+              <div class="contact-form__icon">
+                <input class="contact-form__input" type="tel" id="phone" name="phone" placeholder="Введите телефон">
+                <div class="contact-form__cube">
+                  <img src="https://via.placeholder.com/18x18" alt="email"  width="18" height="18">
+                </div>
+              </div>
+            </div>
+            <div class="contact-form__wrapper">
+              <label class="contact-form__label" for="email">Электронная почта*:</label>
 
-          <label class="contact-form__label" for="email">Электронная почта*:</label>
-          <input class="contact-form__input"type="email" id="email" name="email" placeholder="Введите e-mail">
-          <div class="contact-form__icon">
-            <img src="https://via.placeholder.com/18x18" alt="email"  width="18" height="18">
+              <div class="contact-form__icon">
+                <input class="contact-form__input" type="email" id="email" name="email" placeholder="Введите e-mail">
+                <div class="contact-form__cube">
+                  <img src="https://via.placeholder.com/18x18" alt="email"  width="18" height="18">
+                </div>
+              </div>
+            </div>
           </div>
         </fieldset>
 
@@ -106,7 +119,7 @@
 
         <fieldset class="emotion-form">
           <legend class="emotion-form__legend">Опишите свои эмоции:</legend>
-          <textarea class="emotion-form__textarea" name="emotions" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="emotion-form__textarea" name="emotions" id="" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
         <button class="feedback-forms_button button" type="submit">Отправить отзыв</button>
