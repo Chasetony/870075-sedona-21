@@ -2,15 +2,40 @@
   margin: 0;
   padding: 0;
   list-style: none;
-}
-.gallery__item {
   padding-right: 20px;
-  padding-left: 20px
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media (min-width: @tablet) {
+    justify-content: flex-start;
+  }
+  @media (min-width: @desktop) {
+    padding: 0;
+  }
 }
+@media (min-width: @tablet) {
+  .gallery__item {
+    width: 50%;
+  }
+  .gallery__item:first-child {
+    width: 100%;
+  }
+}
+// Ну так уж точно не надо
+@media (min-width: @desktop) {
+  .gallery__item {
+    width: 33.33333%;
+  }
+}
+
 .gallery__title {
   .pt-sans__bold();
   font-size: 14px;
   line-height: 24px;
+  @media (min-width: @desktop) {
+    color: @basic-white;
+  }
 }
 .gallery__autor {
   .pt-sans__normal();
@@ -18,9 +43,49 @@
   line-height: 24px;
   text-transform: none;
   color: @basic-description;
+  @media (min-width: @desktop) {
+    color: @basic-white;
+  }
 }
 .gallery__amount {
   .pt-sans__bold();
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
+  @media (min-width: @desktop) {
+    color: @basic-white;
+  }
+}
+.gallery__like-icon {
+  margin-right: 14px;
+}
+@media (min-width: @desktop) {
+  .gallery__like-icon path {
+    fill: @basic-white;
+  }
+}
+.gallery__like {
+  display: flex;
+  align-items: baseline;
+  @media (min-width: @tablet) {
+    margin-right: 20px;
+  }
+}
+.gallery__text {
+  @media (min-width: @tablet) {
+    background-color: @input-gray;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media (min-width: @desktop) {
+    background-color: @basic-black;
+    opacity: 0.3;
+  }
+}
+.gallery__text-wrap {
+  @media (min-width: @tablet) {
+    margin-left: 20px;
+  }
 }
