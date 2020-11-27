@@ -5,6 +5,9 @@
     align-items: center;
     height: 120px;
   }
+  @media (max-width: @mobile) {
+    height: 203px;
+  }
 }
 
 .page-footer__tag{
@@ -18,6 +21,15 @@
   }
   @media (min-width: @desktop) {
     margin-left: 101px;
+  }
+  @media (max-width: @mobile) {
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
+}
+.page-footer__social-icons {
+  @media (max-width: @mobile) {
+    margin-bottom: 32px;
   }
 }
 .page-footer__list {

@@ -9,25 +9,28 @@
   <body class="page-body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__list-item"><a>Главная</a></li>
-            <li class="main-nav__list-item"><a href="/catalog.html">Фото и видео</a></li>
-            <li class="main-nav__list-item"><a href="/form.html">Форма отзыва</a></li>
-            <li class="main-nav__list-item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
-          </ul>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <div class="page-header__row">
-            <a class="page-header__logo">
-              <img src="./img/logotype-mobile.svg" alt="Логотип Sedona" width="101" height="84">
-            </a>
+        <div class="page-header__container">
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__list-item"><a>Главная</a></li>
+              <li class="main-nav__list-item"><a href="/catalog.html">Фото и видео</a></li>
+              <li class="main-nav__list-item"><a href="/form.html">Форма отзыва</a></li>
+              <li class="main-nav__list-item main-nav__list-item--linear"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
+            </ul>
+            <!-- <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button> -->
+              <a class="page-header__logo">
+                <span></span>
+                  <img src="./img/logotype-mobile.svg" alt="Логотип Sedona" width="101" height="84">
+              </a>
+          </nav>
+          <div class="page-header__burger-wrap">
             <div class="page-header__burger">
               <span></span>
             </div>
           </div>
-        </nav>
+        </div>
       </div>
     </header>
 
@@ -46,13 +49,15 @@
 
       <section class="causes causes-top">
         <h2 class="visually-hidden">Преимущества</h2>
+
         <div class="causes__fone causes__fone-top">
+          <div class="causes__decor"></div>
           <h3 class="causes__advantages-title">Настоящий<br> городок</h3>
           <p class="causes__description">— №1 —</p>
-          <p class="causes__description">Седона - не аттракцион для туристов, там<br> течёт своя жизнь</p>
+          <p class="causes__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
         <div class="causes__image causes__image-top">
-          <img src="./img/photo-city.jpg" alt="Фото зданий в штате Седона">
+          <img src="./img/photo-citypk.jpg" alt="Фото зданий в штате Седона">
         </div>
       </section>
 
@@ -71,20 +76,20 @@
           <li class="advertising__list-item">
             <!-- <img class="advent_icon" src="img/icon-2.svg" width="64" height="77" alt="Иконка подарка"> -->
             <p class="advertising__title advertising__title--gift">Сувениры</p>
-            <p class="advertising__description">Не только китайского, но и местного<br> производства!</p>
+            <p class="advertising__description">Не только китайского,<br> но и местного производства!</p>
           </li>
         </ul>
       </section>
 
       <section class="causes">
         <h2 class="visually-hidden">Преимущества</h2>
-        <div class="causes__fone">
+        <div class="causes__fone causes__fone-bottom">
           <h3 class="causes__advantages-title">Там есть<br> Мост дьявола</h3>
           <p class="causes__description">— №2 —</p>
-          <p class="causes__description">Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+          <p class="causes__description">Да, по нему можно пройти! <br> Если конечно вы осмелитесь</p>
         </div>
         <div class="causes__image">
-          <img  src="./img/photo-bridge.jpg" alt="Фото зданий в штате Седона">
+          <img  src="./img/photo-bridge@1x.jpg" alt="Фото зданий в штате Седона">
         </div>
       </section>
 
@@ -94,7 +99,7 @@
           <li class="causes-gray__list-item">
             <h3 class="causes-gray__title">небольшая <br>площадь</h3>
             <p class="causes-gray__description">— №3 —</p>
-            <p class="causes-gray__description">все достопримечательности <br>находятся очень близко</p>
+            <p class="causes-gray__description">Все интересные места находятся очень близко</p>
           </li>
           <li class="causes-gray__list-item">
             <h3 class="causes-gray__title">красивая <br>дорога</h3>
@@ -112,7 +117,7 @@
       <section class="form-search">
         <p class="form-search__title">Заинтересовались?</p>
         <p class="form-search__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a class="form-search__button">Поиск гостиницы в седоне</a>
+        <a class="form-search__button">Найти гостиницу</a>
       </section>
 
       <section class="footer-map">
