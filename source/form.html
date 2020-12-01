@@ -21,6 +21,7 @@
             <span class="visually-hidden">Открыть меню</span>
           </button> -->
             <a class="page-header__logo">
+              <span></span>
                 <img src="./img/logotype-mobile.svg" alt="Логотип Sedona" width="101" height="84">
             </a>
         </nav>
@@ -36,14 +37,14 @@
   <main class="page-main">
     <section class="main-banner__intro">
       <h1 class="visually-hidden">Оставьте свой отзыв о курортном городе Седона</h1>
-      <img class="main-banner__banner" src="./img/back-desktop.jpg" width="" height="" alt="Природа штата Седона">
-      <img class="main-banner__welcome" src="./img/SEDONA.svg" width="" height="" alt="Приветственный текст штата Седона">
+      <img class="main-banner__banner-intro" src="./img/back-desktop.jpg" width="" height="" alt="Природа штата Седона">
+      <img class="main-banner__welcome-intro" src="./img/sedona-text.svg" width="" height="" alt="Приветственный текст штата Седона">
       <div class="main-banner__decor"></div>
     </section>
 
-    <section class="welcome-content">
-      <h2 class="welcome-content__title">Оставьте свой отзыв</h2>
-      <p class="welcome-content__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <section class="welcome-content__intro-block">
+      <h2 class="welcome-content__title-inside">Оставьте свой отзыв</h2>
+      <p class="welcome-content__intro-inside">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
 
     <section class="feedback-forms">
@@ -68,12 +69,13 @@
           <legend class="contact-form__legend">Контактная информация:</legend>
           <div class="contact-form__wrapper">
             <div class="contact-form__wrapper">
-              <label class="contact-form__label" for="phone">Контактный телефон*:</label>
+              <label class="contact-form__label contact-form__label--tablet" for="phone">Контактный телефон*:</label>
+              <label class="contact-form__label contact-form__label--desktop" for="phone">Телефон*:</label>
 
               <div class="contact-form__icon">
                 <input class="contact-form__input" type="tel" id="phone" name="phone" placeholder="Введите телефон">
                 <div class="contact-form__cube">
-                  <img src="https://via.placeholder.com/18x18" alt="email"  width="18" height="18">
+                  <img src="./img/phone.svg" alt="phone"  width="18" height="18">
                 </div>
               </div>
             </div>
@@ -83,7 +85,7 @@
               <div class="contact-form__icon">
                 <input class="contact-form__input" type="email" id="email" name="email" placeholder="Введите e-mail">
                 <div class="contact-form__cube">
-                  <img src="https://via.placeholder.com/18x18" alt="email"  width="18" height="18">
+                  <img src="./img/mail.svg" alt="email"  width="16" height="12">
                 </div>
               </div>
             </div>
@@ -92,31 +94,43 @@
 
         <fieldset class="effect-form">
           <legend class="effect-form__legend">Ваше общее впечатление:</legend>
-
-          <input class="effect-form__input" type="radio" id="smile" name="feedback" value="smile" checked>
-          <label class="effect-form__label" for="smile">Скорее положительное</label>
-
-          <input class="effect-form__input" type="radio" id="sad" name="feedback" value="sad">
-          <label class="effect-form__label" for="sad">Скорее отрицательное</label>
-
-          <input class="effect-form__input" type="radio" id="difficult" name="feedback" value="difficult">
-          <label class="effect-form__label" for="difficult">Затрудняюсь ответить</label>
+          <div class="effect-form__wrap">
+           <input class="effect-form__input visually-hidden" type="radio" id="smile" name="feedback" value="smile" checked>
+           <label class="effect-form__label" for="smile">Скорее положительное</label>
+          </div>
+          <div class="effect-form__wrap">
+            <input class="effect-form__input visually-hidden" type="radio" id="sad" name="feedback" value="sad">
+            <label class="effect-form__label" for="sad">Скорее отрицательное</label>
+          </div>
+          <div class="effect-form__wrap">
+            <input class="effect-form__input visually-hidden" type="radio" id="difficult" name="feedback" value="difficult">
+            <label class="effect-form__label" for="difficult">Затрудняюсь ответить</label>
+          </div>
         </fieldset>
 
         <fieldset class="sights-form">
-          <legend class="sights-form__legend">Посещенный достопримечательности:</legend>
+          <legend class="sights-form__legend">Посещенные <br >достопримечательности:</legend>
+          <div class="sights-form__wrapper">
+            <div class="sights-form__wrap">
+              <input class="sights-form__input visually-hidden" type="checkbox" id="evil" checked name="sights" value="evil">
+              <label class="sights-form__label" for="evil">Мост Дьявола</label>
+            </div>
 
-          <input class="sights-form__input" type="checkbox" id="evil" checked name="sights" value="evil">
-          <label class="sights-form__label" for="evil">Мост Дьявола</label>
+            <div class="sights-form__wrap">
+              <input class="sights-form__input visually-hidden" type="checkbox" id="bell" checked name="sights" value="bell">
+              <label class="sights-form__label" for="bell">Гора-Колокол</label>
+            </div>
 
-          <input class="sights-form__input" type="checkbox" id="bell" checked name="sights" value="bell">
-          <label class="sights-form__label" for="bell">Гора-Колокол</label>
+            <div class="sights-form__wrap">
+              <input class="sights-form__input visually-hidden" type="checkbox" id="park" checked name="sights" value="park">
+              <label class="sights-form__label" for="park">Слайд-парк</label>
+            </div>
 
-          <input class="sights-form__input" type="checkbox" id="park" checked name="sights" value="park">
-          <label class="sights-form__label" for="park">Слайд-парк</label>
-
-          <input class="sights-form__input" type="checkbox" id="red-rock" name="sights" value="red-rock">
-          <label class="sights-form__label" for="red-rock">Красные скалы</label>
+            <div class="sights-form__wrap">
+              <input class="sights-form__input visually-hidden" type="checkbox" id="red-rock" name="sights" value="red-rock">
+              <label class="sights-form__label" for="red-rock">Красные скалы</label>
+            </div>
+          </div>
         </fieldset>
 
         <fieldset class="emotion-form">
@@ -124,7 +138,10 @@
           <textarea class="emotion-form__textarea" name="emotions" id="" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
-        <button class="feedback-forms_button button" type="submit">Отправить отзыв</button>
+        <div class="button-form-wrap">
+          <button class="feedback-forms_button button" type="submit">Отправить отзыв</button>
+          <p>* — обязательные поля</p>
+        </div>
 
         <div class="popup-eror">
           <p class="popup-eror__title">Что-то пошло не так!</p>

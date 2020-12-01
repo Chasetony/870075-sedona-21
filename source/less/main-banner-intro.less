@@ -1,0 +1,39 @@
+.main-banner__intro {
+  background-color: @blue;
+  position: relative;
+  height: 301px;
+  margin-bottom: 114px;
+  @media (max-width: 767px) {
+    // height: 389px;
+  }
+  @media (min-width: @tablet) {
+    margin-bottom: 65px;
+    height: 290px;
+  }
+  @media (max-width: @mobile) {
+    margin-bottom: 37px;
+    height: 157px;
+  }
+}
+.main-banner__banner-intro {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+.main-banner__welcome-intro {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  @media (min-width: @tablet) {
+    top: 95px;
+    // top: 50%;
+    // transform: translate(-50%, -50%);
+    // width: 282px;
+  }
+  @media (max-width: @mobile) {
+    top: 50px;
+    width: 229px;
+  }
+}
