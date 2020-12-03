@@ -1,4 +1,5 @@
 .video_block {
+  margin-bottom: 85px;
   @media (min-width: @tablet) {
     margin: 0 auto;
     max-width: 680px;
@@ -9,7 +10,7 @@
 }
 .video_block__title {
   .pt-sans__bold();
-  font-size: 18px;
+  font-size: 30px;
   line-height: 26px;
   text-align: center;
   color: @basic-black;
@@ -17,24 +18,93 @@
 .video_block__intro {
   .pt-sans__normal();
   font-size: 14px;
-  line-height: 26px;
+  line-height: 24px;
   text-align: center;
   color: @basic-description;
+  max-width: 445px;
+  margin: 0 auto;
 }
 .video_block__player {
-
+  margin-top: 79px;
+  position: relative;
+  max-width: 800px;
+  max-height: 500px;
+  // overflow: hidden;
+  @media (max-width: @mobile) {
+    min-height: 201px;
+  }
 }
 .video_block__player img{
   width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
-.controls__wrapper {
+.video_block__decor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 93px;
+  width: 100%;
   background-color: @basic-black;
   opacity: 0.6;
-  margin: 0 20px;
-  height: 45px;
+  @media (max-width: @mobile) {
+    height: 45px;
+    max-width: 280px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+.controls__range {
+  position: absolute;
+  bottom: 38px;
+  left: 45%;
+  width: 540px;
+  margin: 0;
+  transform: translate(-50%, 0);
+  @media (max-width: @desktop) {
+    width: 389px;
+  }
+  @media (max-width: @mobile) {
+    bottom: 15px;
+    max-width: 235px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+.controls {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  @media (max-width: @mobile) {
+    bottom: -65px;
+  }
+}
+.controls__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 35px;
+  margin-right: 42px;
+  @media (max-width: @mobile) {
+    fill: #5C6870;
+  }
+}
+.controls__icon path{
+
+  fill: @basic-white;
+  @media (max-width: @mobile) {
+    fill: #5C6870;
+  }
+}
+.controls__icon--last {
+  margin-left: 28px;
 }
 .controls__wrapper--gray {
-  background-color: @input-gray;
-  margin: 0 20px;
-  height: 66px;
+  @media (max-width: @tablet) {
+    background-color: @input-gray;
+    margin: 0 20px;
+    height: 66px;
+  }
 }

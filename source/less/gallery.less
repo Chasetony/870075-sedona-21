@@ -1,3 +1,6 @@
+.gallery {
+  margin-bottom: 63px;
+}
 .gallery__list {
   margin: 0;
   padding: 0;
@@ -13,28 +16,65 @@
   @media (min-width: @desktop) {
     padding: 0;
   }
-}
-@media (min-width: @tablet) {
-  .gallery__item {
-    width: 50%;
+  @media (max-width: @tablet) {
+    padding-right: 60px;
+    padding-left: 60px;
   }
-  .gallery__item:first-child {
+  @media (max-width: @mobile) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.gallery__item {
+  // overflow: hidden;
+    @media (min-width: @tablet) {
+    width: 50%;
+    position: relative;
+    height: 267px;
+  }
+    @media (min-width: @desktop) {
+      width: 33.33333%;
+  }
+    @media (max-width: @tablet) {
+      margin-bottom: 80px;
+  }
+  @media (max-width: @mobile) {
+    min-width: 280px;
+    min-height: 280px;
+    margin-bottom: 135px;
+    position: relative;
+  }
+}
+.gallery__item:first-child {
+  @media (min-width: @tablet) {
     width: 100%;
   }
 }
-// Ну так уж точно не надо
-@media (min-width: @desktop) {
-  .gallery__item {
-    width: 33.33333%;
+
+.gallery__item--first {
+  height: 400px;
+  @media (max-width: @mobile) {
+    min-width: 280px;
+    height: 280px;
   }
+}
+.gallery__item img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 .gallery__title {
   .pt-sans__bold();
   font-size: 14px;
   line-height: 24px;
-  @media (min-width: @desktop) {
+  @media (min-width: @tablet) {
     color: @basic-white;
+  }
+  @media (max-width: @tablet) {
+    color: @basic-black;
   }
 }
 .gallery__autor {
@@ -43,8 +83,11 @@
   line-height: 24px;
   text-transform: none;
   color: @basic-description;
-  @media (min-width: @desktop) {
+  @media (min-width: @tablet) {
     color: @basic-white;
+  }
+  @media (max-width: @tablet) {
+    color: @basic-description;
   }
 }
 .gallery__amount {
@@ -52,16 +95,20 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
-  @media (min-width: @desktop) {
+  @media (min-width: @tablet) {
     color: @basic-white;
+  }
+  @media (max-width: @tablet) {
+    color: @basic-black;
   }
 }
 .gallery__like-icon {
   margin-right: 14px;
 }
-@media (min-width: @desktop) {
-  .gallery__like-icon path {
-    fill: @basic-white;
+.gallery__like-icon path {
+  fill: @basic-white;
+    @media (max-width: @tablet) {
+      fill: @basic-black;
   }
 }
 .gallery__like {
@@ -72,16 +119,35 @@
   }
 }
 .gallery__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   @media (min-width: @tablet) {
-    background-color: @input-gray;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  @media (min-width: @desktop) {
-    background-color: @basic-black;
-    opacity: 0.3;
+  @media (max-width: @tablet) {
+    bottom: -80px;
+    background-color: @input-gray;
+  }
+  @media (max-width: @mobile) {
+    bottom: -119px;
+    background-color: transparent;
+  }
+}
+.gallery__item-decor{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: @basic-black;
+  opacity: 0.3;
+  height: 80px;
+  @media (max-width: @tablet) {
+    display: none;
   }
 }
 .gallery__text-wrap {
