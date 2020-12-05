@@ -22,7 +22,11 @@
             </button> -->
               <a class="page-header__logo">
                 <span></span>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/logotype-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="./img/logotype-tablet.svg">
                   <img src="./img/logotype-mobile.svg" alt="Логотип Sedona" width="101" height="84">
+                </picture>
               </a>
           </nav>
           <div class="page-header__burger-wrap">
@@ -37,7 +41,7 @@
     <main class="page-main">
       <section class="main-banner">
         <h1 class="visually-hidden">Курортный город Седона</h1>
-        <img class="main-banner__banner" src="./img/back-desktop.jpg" width="" height="" alt="Природа штата Седона">
+        <img class="main-banner__banner" src="./img/back-desktop.jpg" srcset="./img/back-desktop@x2.jpg 2x" alt="Природа штата Седона">
         <img class="main-banner__welcome" src="./img/text-index.svg"  alt="Приветственный текст штата Седона">
         <div class="main-banner__decor"></div>
       </section>
@@ -57,7 +61,7 @@
           <p class="causes__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
         <div class="causes__image causes__image-top">
-          <img src="./img/photo-citypk.jpg" alt="Фото зданий в штате Седона">
+          <img src="./img/photo-citypk.jpg" srcset="./img/photo-city@2x.jpg 2x" alt="Фото зданий в штате Седона">
         </div>
       </section>
 
@@ -89,7 +93,7 @@
           <p class="causes__description">Да, по нему можно пройти! <br> Если конечно вы осмелитесь</p>
         </div>
         <div class="causes__image">
-          <img  src="./img/photo-bridge@1x.jpg" alt="Фото зданий в штате Седона">
+          <img  src="./img/photo-bridge@1x.jpg" srcset="./img/photo-bridge@2x.jpg 2x" alt="Фото зданий в штате Седона">
         </div>
       </section>
 
