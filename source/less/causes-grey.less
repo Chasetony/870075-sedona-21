@@ -21,16 +21,23 @@
 }
 .causes-gray__list-item {
   list-style: none;
-  width: 33%;
+  // width: 33%;
+  width: 350px;
   margin-bottom: auto;
+  @media (max-width: @desktop) {
+    width: 240px;
+  }
   @media (max-width: @mobile) {
-    width: 100%;
-    margin-bottom: 36px;
+    // width: 99%;
+    margin-bottom: 28px;
+    border-bottom: 1px solid @line-gray;
+    width: 280px;
   }
 }
 .causes-gray__list-item:last-of-type {
   @media (max-width: @mobile) {
     margin-bottom: 0;
+    border-bottom: none;
   }
 }
 
@@ -61,5 +68,16 @@
   padding: 0 30px;
   @media (max-width: @mobile) {
     margin-bottom: 15px;
+    padding: 0 15px;
+  }
+}
+.causes-gray__description br{
+  @media (max-width: @mobile) {
+    display: none;
+  }
+}
+.causes-gray__description--line {
+  @media (max-width: @mobile) {
+    margin-bottom: 23px;
   }
 }

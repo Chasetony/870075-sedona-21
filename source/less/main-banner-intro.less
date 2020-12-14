@@ -15,11 +15,23 @@
     height: 157px;
   }
 }
+.main-banner__intro--catalog {
+  margin-bottom: 103px;
+  @media (max-width: @tablet) {
+    margin-bottom: 65px;
+  }
+  @media (max-width: @mobile) {
+    margin-bottom: 33px;
+  }
+}
 .main-banner__banner-intro {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: bottom;
+  @media (max-width: @tablet) {
+    object-fit: none;
+  }
 }
 .main-banner__welcome-intro {
   position: absolute;
