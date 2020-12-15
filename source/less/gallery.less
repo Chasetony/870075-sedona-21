@@ -1,5 +1,11 @@
 .gallery {
   margin-bottom: 63px;
+  @media (max-width: @tablet) {
+    margin-bottom: 60px;
+  }
+  @media (max-width: @mobile) {
+    margin-bottom: 11px;
+  }
 }
 .gallery__list {
   margin: 0;
@@ -10,6 +16,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
   @media (min-width: @tablet) {
     justify-content: flex-start;
   }
@@ -23,6 +31,35 @@
   @media (max-width: @mobile) {
     padding-right: 20px;
     padding-left: 20px;
+    padding-top: 51px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.gallery__list::before {
+  @media (max-width: @mobile) {
+    content: "";
+    position: absolute;
+    top: -23px;
+    left: -100%;
+    right: -100%;
+    // width: 100%;
+    height: 1px;
+    background-color: @input-gray-hover;
+    z-index: 5;
+  }
+}
+.gallery__list::after {
+  @media (max-width: @mobile) {
+    content: "";
+    position: absolute;
+    bottom: 22px;
+    left: -100%;
+    right: -100%;
+    // width: 100%;
+    height: 1px;
+    background-color: @input-gray-hover;
+    z-index: 5;
   }
 }
 
@@ -40,10 +77,12 @@
       margin-bottom: 80px;
   }
   @media (max-width: @mobile) {
-    min-width: 280px;
-    min-height: 280px;
+    // min-width: 280px;
+    // min-height: 280px;
     margin-bottom: 135px;
     position: relative;
+    width: 280px;
+    height: 280px;
   }
 }
 .gallery__item:first-child {
@@ -65,11 +104,24 @@
   width: 100%;
   height: 100%;
 }
+.gallery__item::before {
+  @media (max-width: @mobile) {
+    content: "";
+    position: absolute;
+    top: -23px;
+    left: -100%;
+    right: -100%;
+    // width: 100%;
+    height: 1px;
+    background-color: @input-gray-hover;
+  }
+}
 
 .gallery__title {
   .pt-sans__bold();
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
   @media (min-width: @tablet) {
     color: @basic-white;
   }
@@ -83,6 +135,7 @@
   line-height: 24px;
   text-transform: none;
   color: @basic-description;
+  margin: 0;
   @media (min-width: @tablet) {
     color: @basic-white;
   }
@@ -117,6 +170,10 @@
   @media (min-width: @tablet) {
     margin-right: 20px;
   }
+  @media (max-width: @mobile) {
+    position: relative;
+    bottom: -9px;
+  }
 }
 .gallery__text {
   position: absolute;
@@ -134,7 +191,7 @@
     background-color: @input-gray;
   }
   @media (max-width: @mobile) {
-    bottom: -119px;
+    bottom: -88px;
     background-color: transparent;
   }
 }

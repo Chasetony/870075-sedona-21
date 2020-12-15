@@ -17,14 +17,15 @@
   text-align: center;
   text-transform: uppercase;
   @media (min-width: @tablet) {
-    margin-left: 45px;
-  }
-  @media (min-width: @desktop) {
-    margin-left: 101px;
+    margin-left: 47px;
   }
   @media (max-width: @mobile) {
     margin-top: 40px;
     margin-bottom: 32px;
+    margin-left: 0px;
+  }
+  @media (min-width: @desktop) {
+    margin-left: 107px;
   }
 }
 .page-footer__social-icons {
@@ -71,7 +72,7 @@
   justify-content: center;
   align-items: center;
   @media (min-width: @tablet) {
-    margin-right: 42px;
+    margin-right: 60px;
   }
   @media (min-width: @desktop) {
     margin-right: 120px;
@@ -82,6 +83,9 @@
   font-size: 14px;
   line-height: 26px;
   margin-right: 10px;
+}
+.page-footer__copyright a{
+  height: 35px;
 }
 .page-footer__icon-html:hover path {
   fill: @blue-hover-svg;
