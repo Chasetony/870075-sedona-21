@@ -29,8 +29,13 @@
   }
 }
 .advertising__list-item {
-  margin-top: 70px;
   position: relative;
+  @media (max-width: 1199px) {
+    margin-top: 70px;
+  }
+  @media (min-width: 1200px) {
+    margin-top: 58px;
+  }
   @media (max-width: @mobile) {
     display: flex;
     flex-direction: column;
@@ -39,6 +44,14 @@
     margin-bottom: 24px;
     margin-left: 69px;
     margin-right: 20px;
+  }
+}
+.advertising__list-item--gift {
+  @media (max-width: 1199px) {
+    margin-top: 56px;
+  }
+  @media (max-width: @mobile) {
+    margin-top: 0;
   }
 }
 .advertising__list-item:first-of-type {
@@ -146,6 +159,49 @@
     margin: 0;
   }
 }
+@media (max-width: 1199px) {
+  .advertising__description--home {
+    width: 180px;
+    margin: 0 auto;
+  }
+  .advertising__description--food {
+    width: 156px;
+    margin: 0 auto;
+  }
+  .advertising__description--gift{
+    width: 215px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .advertising__description--home {
+    width: 255px;
+    margin: 0 auto;
+  }
+  .advertising__description--food {
+    width: 285px;
+    margin: 0 auto;
+  }
+  .advertising__description--gift{
+    width: 215px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: @mobile) {
+  .advertising__description--home {
+    min-width: 230px;
+    margin: initial;
+  }
+  .advertising__description--food {
+    min-width: 230px;
+    margin: initial;
+  }
+  .advertising__description--gift{
+    min-width: 230px;
+    margin: initial;
+  }
+}
+
 .advertising__description br {
   @media (max-width: @tablet) {
     display: none;
