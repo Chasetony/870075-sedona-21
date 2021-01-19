@@ -271,9 +271,21 @@
 }
 
 .contact-form__label {
+  .pt-sans__normal();
+  font-size: 14px;
+  line-height: 26px;
+  color: @basic-description;
+  cursor: pointer;
+  margin-left: 26px;
+
   @media (min-width: @tablet) {
     margin-bottom: 8px;
     display: block;
+  }
+
+  @media (min-width: @desktop) {
+    margin-left: 0;
+    margin-right: 16px;
   }
 }
 
@@ -369,19 +381,19 @@
   transform: translate(-50%, -50%);
 }
 
-.contact-form__label {
-  .pt-sans__normal();
-  font-size: 14px;
-  line-height: 26px;
-  color: @basic-description;
-  cursor: pointer;
-  margin-left: 26px;
+// .contact-form__label {
+//   .pt-sans__normal();
+//   font-size: 14px;
+//   line-height: 26px;
+//   color: @basic-description;
+//   cursor: pointer;
+//   margin-left: 26px;
 
-  @media (min-width: @desktop) {
-    margin-left: 0;
-    margin-right: 16px;
-  }
-}
+//   @media (min-width: @desktop) {
+//     margin-left: 0;
+//     margin-right: 16px;
+//   }
+// }
 
 .effect-form {
   padding: 0;

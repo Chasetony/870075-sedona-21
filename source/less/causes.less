@@ -38,8 +38,16 @@
 }
 
 .causes__fone-top {
+  background-color: @blue;
+
   @media (max-width: @mobile) {
     height: 205px;
+  }
+
+  @media (min-width: @tablet) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
   }
 }
 
@@ -145,15 +153,15 @@
   }
 }
 
-.causes__fone-top {
-  background-color: @blue;
-
-  @media (min-width: @tablet) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-  }
-}
+// .causes__fone-top {
+//   background-color: @blue;
+//
+//   @media (min-width: @tablet) {
+//     grid-column-start: 1;
+//     grid-column-end: 2;
+//     grid-row-start: 1;
+//   }
+// }
 
 .causes__image-top {
   @media (min-width: @tablet) {
