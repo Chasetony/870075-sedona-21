@@ -1,7 +1,9 @@
+
 .form-search {
   display: flex;
   flex-direction: column;
 }
+
 .form-search__title {
   .pt-sans__bold();
   font-size: 30px;
@@ -9,14 +11,17 @@
   text-align: center;
   margin-top: 58px;
   margin-bottom: 32px;
+
   @media (max-width: @mobile) {
-      font-size: 21px;
+    font-size: 21px;
   }
+
   @media (max-width: @mobile) {
     margin-top: 34px;
     margin-bottom: 21px;
   }
 }
+
 .form-search__description {
   .pt-sans__normal();
   font-size: 14px;
@@ -25,20 +30,24 @@
   color: @basic-description;
   margin: 0;
   margin-bottom: 43px;
+
   @media (max-width: @tablet) {
     margin-bottom: 38px;
   }
+
   @media (max-width: @mobile) {
     margin-bottom: 27px;
     margin-left: 20px;
     margin-right: 20px;
   }
 }
+
 .form-search__description br {
   @media (max-width: @mobile) {
     display: none;
   }
 }
+
 .form-search__button {
   .pt-sans__bold();
   display: flex;
@@ -53,17 +62,21 @@
   height: 58px;
   margin: 0 auto;
   margin-bottom: 66px;
+
   @media (max-width: @tablet) {
     margin-bottom: 58px;
   }
+
   @media (max-width: @mobile) {
     width: 280px;
     margin-bottom: 49px;
   }
 }
+
 .form-search__button:hover {
   background-color: @blue-hover;
 }
+
 .form-search__button:active {
   background-color: @blue-active;
 }

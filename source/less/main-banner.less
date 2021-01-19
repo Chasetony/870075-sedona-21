@@ -1,35 +1,43 @@
+
 .main-banner {
   background-color: @blue;
   position: relative;
   height: 518px;
   margin-bottom: 56px;
+
   @media (max-width: 767px) {
     height: 389px;
   }
+
   @media (max-width: @tablet) {
     margin-bottom: 45px;
   }
+
   @media (max-width: @mobile) {
     margin-bottom: 32px;
   }
 }
+
 .main-banner__banner {
   width: auto;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
+
 .main-banner__welcome {
   position: absolute;
   top: 76px;
   left: 50%;
-  transform: translate(-50%, 0px);
+  transform: translate(-50%, 0);
+
   @media (max-width: 767px) {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 282px;
   }
 }
+
 .main-banner__decor {
   position: absolute;
   bottom: 0;

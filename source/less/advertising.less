@@ -3,15 +3,18 @@
   min-height: 330px;
   display: grid;
   align-items: center;
+
   @media (max-width: @mobile) {
     // height: 416px;
     height: 371px;
   }
 }
+
 .advertising__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
   @media (min-width: @tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -19,23 +22,28 @@
     align-items: center;
     position: relative;
   }
+
   @media (max-width: @mobile) {
     max-height: 416px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    justify-content: inherit;
+    // justify-content: inherit;
     height: 100%;
   }
 }
+
 .advertising__list-item {
   position: relative;
+
   @media (max-width: 1199px) {
     margin-top: 70px;
   }
+
   @media (min-width: 1200px) {
     margin-top: 58px;
   }
+
   @media (max-width: @mobile) {
     display: flex;
     flex-direction: column;
@@ -46,24 +54,29 @@
     margin-right: 20px;
   }
 }
+
 .advertising__list-item--gift {
   @media (max-width: 1199px) {
     margin-top: 56px;
   }
+
   @media (max-width: @mobile) {
     margin-top: 0;
   }
 }
+
 .advertising__list-item:first-of-type {
   @media (max-width: @mobile) {
     margin-top: 36px;
   }
 }
+
 .advertising__list-item:nth-of-type(2) {
   @media (max-width: @mobile) {
     order: 3;
   }
 }
+
 .advertising__title {
   .pt-sans__bold();
   font-size: 21px;
@@ -71,12 +84,14 @@
   color: @basic-black;
   text-align: center;
   // position: relative;
+
   @media (max-width: @mobile) {
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 17px;
   }
 }
+
 .advertising__title--home::before {
   content: "";
   position: absolute;
@@ -87,10 +102,12 @@
   background-image: url("/img/icon-house.svg");
   background-repeat: no-repeat;
   background-size: cover;
+
   @media (max-width: @tablet) {
     top: -78px;
     left: 35%;
   }
+
   @media (max-width: @mobile) {
     width: 39px;
     height: 38px;
@@ -99,6 +116,7 @@
     right: 104%;
   }
 }
+
 .advertising__title--food::before {
   content: "";
   position: absolute;
@@ -106,13 +124,15 @@
   height: 70px;
   top: -74px;
   left: 40%;
-  background-image: url('/img/icon-burger.svg');
+  background-image: url("/img/icon-burger.svg");
   background-repeat: no-repeat;
   background-size: cover;
+
   @media (max-width: @tablet) {
     top: -74px;
     left: 35%;
   }
+
   @media (max-width: @mobile) {
     width: 40px;
     height: 35px;
@@ -121,6 +141,7 @@
     right: 105%;
   }
 }
+
 .advertising__title--gift::before {
   content: "";
   position: absolute;
@@ -128,13 +149,15 @@
   height: 77px;
   top: -80px;
   left: 42%;
-  background-image: url('/img/icon-gift.svg');
+  background-image: url("/img/icon-gift.svg");
   background-repeat: no-repeat;
   background-size: cover;
+
   @media (max-width: @tablet) {
     top: -80px;
     left: 37%;
   }
+
   @media (max-width: @mobile) {
     width: 32px;
     height: 38px;
@@ -143,6 +166,7 @@
     right: 105%;
   }
 }
+
 .advertising__description {
   .pt-sans__normal();
   font-size: 14px;
@@ -154,53 +178,64 @@
   //   margin: 14px auto;
   //   align-items: center;
   // }
+
   @media (max-width: @mobile) {
     text-align: inherit;
     margin: 0;
   }
 }
+
 @media (max-width: 1199px) {
   .advertising__description--home {
     width: 180px;
     margin: 0 auto;
   }
+
   .advertising__description--food {
     width: 156px;
     margin: 0 auto;
   }
+
   .advertising__description--gift {
     width: 215px;
     margin: 0 auto;
   }
 }
+
 @media (min-width: 1200px) {
   .advertising__description--home {
     width: 255px;
     margin: 0 auto;
   }
+
   .advertising__description--food {
     width: 285px;
     margin: 0 auto;
   }
+
   .advertising__description--gift {
     width: 215px;
     margin: 0 auto;
   }
 }
+
 @media (max-width: @mobile) {
   .advertising__description--home {
     min-width: 230px;
     margin: initial;
   }
+
   .advertising__description--food {
     min-width: 230px;
     margin: initial;
   }
+
   .advertising__description--gift {
     min-width: 230px;
     margin: initial;
   }
 }
+
 .advertising__description br {
   @media (max-width: @tablet) {
     display: none;

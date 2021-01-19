@@ -7,8 +7,10 @@
     grid-template-rows: 256px;
   }
 }
+
 .causes__decor {
   display: none;
+
   @media (max-width: @mobile) {
     display: block;
     position: absolute;
@@ -24,44 +26,54 @@
   //   top: -1px;
   // }
 }
+
 .causes__fone {
   position: relative;
   background-color: @blue;
+
   @media (min-width: @tablet) {
     grid-column-start: 2;
     width: 100%;
   }
 }
+
 .causes__fone-top {
   @media (max-width: @mobile) {
     height: 205px;
   }
 }
+
 .causes__fone-bottom {
   @media (max-width: @mobile) {
     height: 191px;
   }
 }
+
 .causes__image {
   overflow: hidden;
+
   @media (min-width: @tablet) {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
   }
+
   @media (max-width: @mobile) {
     height: 260px;
   }
 }
+
 .causes__image img {
   object-position: center;
   object-fit: cover;
   width: 100%;
   height: 100%;
+
   @media (max-width: @mobile) {
     height: 260px;
   }
 }
+
 .causes__advantages-title {
   .pt-sans__bold();
   font-size: 21px;
@@ -70,9 +82,11 @@
   color: @basic-white;
   margin-top: 47px;
   margin-bottom: auto;
+
   @media (max-width: @tablet) {
     margin-top: 42px;
   }
+
   @media (max-width: @mobile) {
     padding-top: 50px;
     font-size: 18px;
@@ -80,21 +94,26 @@
     margin-top: 0;
   }
 }
+
 .causes__advantages-title--bottom {
   margin-top: 51px;
+
   @media (max-width: @tablet) {
     margin-top: 45px;
   }
+
   @media (max-width: @mobile) {
     // margin-top: 35px;
     padding-top: 39px;
   }
 }
+
 .causes__advantages-title br {
   @media (max-width: @mobile) {
     display: none;
   }
 }
+
 .causes__description {
   .pt-sans__normal();
   font-size: 14px;
@@ -103,32 +122,39 @@
   color: @basic-white;
   max-width: 288px;
   margin: 13px auto 23px auto;
+
   @media (max-width: @tablet) {
     max-width: 195px;
   }
+
   @media (max-width: @mobile) {
     max-width: 290px;
     margin: 13px auto 15px auto;
   }
 }
+
 .causes__description--bottom br {
   @media (max-width: @tablet) {
     display: none;
   }
 }
+
 .causes-top {
   @media (min-width: @tablet) {
     grid-template-columns: 1fr 2fr;
   }
 }
+
 .causes__fone-top {
   background-color: @blue;
+
   @media (min-width: @tablet) {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
   }
 }
+
 .causes__image-top {
   @media (min-width: @tablet) {
     grid-column-start: 2;

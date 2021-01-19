@@ -1,3 +1,4 @@
+
 .page-footer {
   @media (min-width: @tablet) {
     display: flex;
@@ -5,37 +6,45 @@
     align-items: center;
     height: 120px;
   }
+
   @media (max-width: @mobile) {
     height: 203px;
   }
 }
+
 .page-footer__tag {
   .pt-sans__bold();
   font-size: 21px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
   @media (min-width: @tablet) {
     margin-left: 47px;
     padding-left: 10px;
   }
+
   @media (max-width: @mobile) {
     margin-top: 40px;
     margin-bottom: 32px;
-    margin-left: 0px;
+    margin-left: 0;
   }
+
   @media (min-width: @desktop) {
     margin-left: 107px;
     padding-left: 10px;
   }
 }
+
 .page-footer__social-icons {
   margin-left: -10px;
+
   @media (max-width: @mobile) {
     margin-bottom: 32px;
     margin-left: 0;
   }
 }
+
 .page-footer__list {
   margin: 0;
   padding: 0;
@@ -43,59 +52,74 @@
   display: flex;
   justify-content: center;
 }
+
 .page-footer__list-item {
   margin-right: 6px;
 }
+
 .page-footer__list-item:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
+
 .page-footer__cube {
   width: 46px;
   height: 48px;
   background-color: @blue;
 }
+
 .page-footer__cube img {
   margin: 0 auto;
   display: block;
   position: relative;
   top: 50%;
-  transform: translate(0px, -50%);
+  transform: translate(0, -50%);
 }
-.page-footer__cube:hover{
+
+.page-footer__cube:hover {
   background-color: @blue-hover;
 }
-.page-footer__cube:active{
+
+.page-footer__cube:active {
   background-color: @blue-active;
 }
+
 .page-footer__cube:active img {
   opacity: 0.3;
 }
+
 .page-footer__copyright {
   display: flex;
   justify-content: center;
   align-items: center;
+
   @media (min-width: @tablet) {
     margin-right: 60px;
   }
+
   @media (min-width: @desktop) {
     margin-right: 120px;
   }
 }
+
 .page-footer__copyright-text {
   .pt-sans__normal();
   font-size: 14px;
   line-height: 26px;
   margin-right: 10px;
 }
+
 .page-footer__copyright a {
   height: 35px;
 }
+
 .page-footer__icon-html {
   fill: @basic-black;
 }
+
 .page-footer__icon-html:hover {
   fill: @blue-hover-svg;
 }
+
 .page-footer__icon-html:active {
   fill: rgba(0, 0, 0, 0.3);
 }
